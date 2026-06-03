@@ -77,43 +77,6 @@ def test_login_success(client):
     assert "session" in response.cookies
 ```
 
----
-
-## 出力例
-
-```markdown
-# test_login.py
-
-## test_login_success
-
-### Spec ID
-
-- AUTH-001
-
-### Description
-
-ユーザーは正常にログインできる
-
-### Given
-
-- 登録済みユーザーが存在する
-
-### When
-
-- 正しい認証情報でログインする
-
-### Then
-
-- HTTP 200 が返る
-- セッションCookieが発行される
-
-### Assertions
-
-- response.status_code == 200
-- "session" in response.cookies
-```
-
----
 
 ## ディレクトリ構造
 
